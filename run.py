@@ -129,7 +129,7 @@ def one_order(order_id):
     elif request.method == 'DELETE':
         db.session.delete(order)
         db.session.commit()
-        return f"Пользователь с ID={order_id} удален", 200
+        return f"Заказ с ID={order_id} удален", 200
 
 
 @app.route('/offers/<int:offer_id>/', methods=['GET', 'PUT', 'DELETE'])
