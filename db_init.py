@@ -40,5 +40,3 @@ for offer in data.OFFERS:
         executor_id=offer['executor_id'],
     ))
     db.session.commit()
-
-db.drop_all()
